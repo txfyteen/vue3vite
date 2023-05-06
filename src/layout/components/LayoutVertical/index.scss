@@ -1,0 +1,46 @@
+.el-container {
+  width: 100%;
+  height: 100%;
+  .el-header {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+
+    border-bottom: 1px solid #f1f1f1;
+  }
+  .el-aside {
+    // 由内容决定
+    width: auto;
+    border-right: 1px solid var(--el-border-color);
+    transition: all 0.3s ease;
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: all 0.3s ease;
+      // 隐藏右侧的border
+      :deep(.el-menu) {
+        border: none;
+        overflow-x: hidden;
+      }
+    }
+
+    :deep(.el-menu-item) {
+      &.is-active {
+        color: var(--el-color-primary);
+        &::before {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          width: 4px;
+          content: "";
+          background: var(--el-color-primary);
+        }
+      }
+    }
+  }
+
+}

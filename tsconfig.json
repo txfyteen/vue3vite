@@ -7,11 +7,13 @@
     "strict": true,
     "jsx": "preserve",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
     "noEmit": true,
+    // 从哪里开始解析
+    "baseUrl": "./",
     // 模块名到基于 baseUrl 的路径映射的列表。
     "paths": {
       "@": ["src"],
@@ -21,5 +23,7 @@
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "vite.config.ts",
     "commitlint.config.cjs"
   ],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  /** 编译器默认排除的编译文件 */
+  "exclude": ["node_modules", "dist"]
 }

@@ -1,0 +1,31 @@
+$injectedColor: orange;
+$injectedSize: 16px;
+
+:root {
+  /**navigationbar 组件*/
+  --navigationbar-height: 50px;
+  /*sidebar组件*/
+  --sidebar-width: 220px;
+  /*隐藏起来后侧边栏的宽度*/
+  --sidebar-hide-width: 58px;
+  --sidebar-menu-item-height: 60px;
+  --sidebar-menu-tip-line-bg-color: var(--el-color-primary);
+  --sidebar-menu-bg-color: #ffffff;
+  --sidebar-menu-hover-bg-color: #ffffff10;
+  --sidebar-menu-text-color: #coc4cc;
+  --sidebar-menu-active-text-color: #001428;
+  /*sidebarLogo 组件*/
+  --sidebar-logo-bg-color: #001428;
+  /*tagsView 组件*/
+  --tagsview-height: 34px;
+  --tagsview-tag-text-color: #495060;
+  --tagsview-tag-active-text-color: #ffffff;
+  --tagsview-tag-bg-color: var(--el-color-primary);
+  --tagsview-tag-icon-hover-bg-color: #00000030;
+  --tagsview-tag-icon-hover-color: #ffffff;
+
+  /*RightPanel组件*/
+  --rightpanel-button-bg-color: #001428;
+
+
+}
